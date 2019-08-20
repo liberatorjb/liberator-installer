@@ -1,0 +1,22 @@
+{
+  "name": "liberator-installer",
+  "version": "1.0.0",
+  "description": "An easy to use installer for the liberator jailbreak.",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liberatorjb/liberator-installer.git"
+  },
+  "author": "The Jailbreak Community",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/liberatorjb/liberator-installer/issues"
+  },
+  "homepage": "https://github.com/liberatorjb/liberator-installer#readme",
+  "dependencies": {
+    "electron": "^6.0.3"
+  }
+}
