@@ -17,6 +17,5 @@ const showUpdateAlert = (latestversion) => {
 }
 
 const openReleases = () => {
-    app.openExter
     shell.openExternal('https://github.com/liberatorjb/liberator-installer/releases')
 }
