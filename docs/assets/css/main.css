@@ -127,6 +127,11 @@ a {
 #credits-link {
     padding-top: 2vw;
     font-size: 2.3vw;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
 }
 button {
     cursor: pointer;
