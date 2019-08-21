@@ -12,59 +12,46 @@
     body {
         background: linear-gradient(180deg, #8d2036, #ce0a31);
         background-size: 400% 400%;
-    
-        -webkit-animation: background 8s ease infinite;
-        -moz-animation: background 8s ease infinite;
-        animation: background 8s ease infinite;
-    
+        -webkit-animation: background 15s ease infinite;
+        -moz-animation: background 15s ease infinite;
+        animation: background 15s ease infinite;
         min-width: 100vw;
         min-height: 100vh;
-    
-        font-family: "Helvetica Neue", sans-serif;
-    
+        font-family: 'Lato', sans-serif;
+    }
+    @-webkit-keyframes background {
+        0% {
+            background-position: 93% 0%
         }
-    
-        @-webkit-keyframes background {
-            0% {
-                background-position: 93% 0%
-            }
-    
-            50% {
-                background-position: 0% 100%
-            }
-    
-            100% {
-                background-position: 93% 0%
-            }
+        50% {
+            background-position: 0% 100%
         }
-    
-        @-moz-keyframes background {
-            0% {
-                background-position: 93% 0%
-            }
-    
-            50% {
-                background-position: 0% 100%
-            }
-    
-            100% {
-                background-position: 93% 0%
-            }
+        100% {
+            background-position: 93% 0%
         }
-    
-        @keyframes background {
-            0% {
-                background-position: 93% 0%
-            }
-    
-            50% {
-                background-position: 0% 100%
-            }
-    
-            100% {
-                background-position: 93% 0%
-            }
+    }
+    @-moz-keyframes background {
+        0% {
+            background-position: 93% 0%
         }
+        50% {
+            background-position: 0% 100%
+        }
+        100% {
+            background-position: 93% 0%
+        }
+    }
+    @keyframes background {
+        0% {
+            background-position: 93% 0%
+        }
+        50% {
+            background-position: 0% 100%
+        }
+        100% {
+            background-position: 93% 0%
+        }
+    }
     .special-button {
         background-color: rgba(0, 0, 0, 0.20);
         border-radius: 18px 18px 18px 18px;
@@ -74,24 +61,25 @@
         border: 0px;
         font-size: 2.7vw;
         color: white;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Lato Semibold', sans-serif;
+        font-weight: 600;
         margin-right: 10px;
         margin-left: 10px;
         margin-top: 5vw;
-        outline: none;
-        cursor: pointer;
     }
     .header {
         font-size: 4vw;
         color: white;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Lato Heavy', sans-serif;
+        font-weight: 800;
         margin-right: auto;
         margin-left: auto;
     }
     .subheader {
         font-size: 3.5vw;
         color: white;
-        font-family: 'Lato', sans-serif;
+        font-family: 'Lato Medium', sans-serif;
+        font-weight: 500;
         margin-right: auto;
         margin-left: auto;
     }
@@ -101,6 +89,7 @@
     }
     html {
         font-family: 'Lato', sans-serif;
+        font-weight: 400;
     }
     .break {
         line-height: 5vw;
@@ -129,7 +118,8 @@
         margin-left: auto;
     }
     .alert-text {
-        font-family: 'Lato', sans-serif;
+        font-family: 'Lato Semibold', sans-serif;
+        font-weight: 600;
         color: white;
         font-size: 2vw;
         vertical-align: center;

@@ -12,7 +12,7 @@ function createWindow () {
     minimizable: false,
     setBackgroundColor: '#323234'
   })
-  //win.removeMenu(); // Removes the menu bar from the application because it's not needed (for now)
+  win.removeMenu(); // Removes the menu bar from the application because it's not needed (for now)
   // The html file will be index.html
   win.loadFile('index.html')
 }
