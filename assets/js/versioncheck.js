@@ -12,7 +12,7 @@ fetch('https://raw.githubusercontent.com/liberatorjb/liberator-installer/develop
 
 const showUpdateAlert = (latestversionStr) => {
     let alert = document.createElement('span');
-    alert.innerHTML = `<footer class="alert-bottom"><span class="alert-text">Version ${latestversionStr} now available. <a href="https://carsuki.moe">Download</a></span></footer>`
+    alert.innerHTML = `<footer class="alert-bottom"><span class="alert-text">Version ${latestversionStr} now available. <a onclick="openReleases()">Download</a></span></footer>`
     document.body.insertAdjacentElement('beforeend', alert);
 }
 
