@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/liberatorjb/liberator-installer#readme",
   "dependencies": {
+    "dialogs": "^2.0.1",
     "electron": "^6.0.3"
   }
 }
