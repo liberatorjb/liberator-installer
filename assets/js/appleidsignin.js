@@ -10,7 +10,11 @@ const login = () => {
         dialogs.prompt('What is your Apple ID password?', pass => {
             if(!pass) return;
             userdata.pass = pass;
+            installApp(userdata)
         })
     })
-    console.log(userdata)
+}
+
+function installApp(userdata){
+    alert(`Username: ${userdata.email}\nPassword: ${userdata.pass}`);
 }
