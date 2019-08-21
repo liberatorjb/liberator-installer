@@ -1,34 +1,182 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css"> <!-- Modified Bulma for dark bg -->
-    <title>Liberator Installer 0.0.1</title>
-    <style>
-        body {width:100%; height:100%; overflow:hidden; margin:0; background-color: #323234}
-        html {width:100%; height:100%; overflow:hidden}
-        .center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -moz-transform: translateX(-50%) translateY(-50%);
-            -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-        }
-        .header {
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            -moz-transform: translateX(-50%) translateY(-25%);
-            -webkit-transform: translateX(-50%) translateY(-25%);
-            transform: translateX(-50%) translateY(-25%);
-        }
-    </style>
-</head>
-<body style="overflow: hidden">
-        <h2 class="header" style="color: white">Liberator Installer</h2>
-        <button class="center button is-link">Install Liberator to your iDevice</button>
 
-        <script src="assets/js/versioncheck.js"></script>
-</body> 
-</html>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberator Installer 0.0.1</title>
+
+</head>
+
+<style>
+    body {
+        background: linear-gradient(180deg, #8d2036, #ce0a31);
+        background-size: 400% 400%;
+    
+        -webkit-animation: background 8s ease infinite;
+        -moz-animation: background 8s ease infinite;
+        animation: background 8s ease infinite;
+    
+        min-width: 100vw;
+        min-height: 100vh;
+    
+        font-family: "Helvetica Neue", sans-serif;
+    
+        }
+    
+        @-webkit-keyframes background {
+            0% {
+                background-position: 93% 0%
+            }
+    
+            50% {
+                background-position: 0% 100%
+            }
+    
+            100% {
+                background-position: 93% 0%
+            }
+        }
+    
+        @-moz-keyframes background {
+            0% {
+                background-position: 93% 0%
+            }
+    
+            50% {
+                background-position: 0% 100%
+            }
+    
+            100% {
+                background-position: 93% 0%
+            }
+        }
+    
+        @keyframes background {
+            0% {
+                background-position: 93% 0%
+            }
+    
+            50% {
+                background-position: 0% 100%
+            }
+    
+            100% {
+                background-position: 93% 0%
+            }
+        }
+    .special-button {
+        background-color: rgba(0, 0, 0, 0.20);
+        border-radius: 18px 18px 18px 18px;
+        max-width: 45vw;
+        width: 60vw;
+        height: 7vw;
+        border: 0px;
+        font-size: 2.7vw;
+        color: white;
+        font-family: 'Lato Semibold', sans-serif;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 5vw;
+        outline: none;
+    }
+    .header {
+        font-size: 4vw;
+        color: white;
+        font-family: 'Lato Heavy', sans-serif;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .subheader {
+        font-size: 3.5vw;
+        color: white;
+        font-family: 'Lato Medium', sans-serif;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .container {
+        align-content: center;
+        padding-top: 2vw;
+    }
+    html {
+        font-family: 'Lato', sans-serif;
+    }
+    .break {
+        line-height: 5vw;
+    }
+    .break2special {
+        line-height: 1vw;
+    }
+    .buttons {
+        line-height: -1vw;
+    }
+    #second-button {
+        margin-top: 1.8vw;
+    }
+    .alert-bottom {
+        float: bottom;
+        background-color: rgba(0, 0, 0, 0.40);
+        height: 5vw;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        display: table;
+        text-align: center;
+    }
+    body {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .alert-text {
+        font-family: 'Lato Semibold', sans-serif;
+        color: white;
+        font-size: 2vw;
+        vertical-align: center;
+        display: table-cell;
+        vertical-align: middle;
+    }
+    a:hover {
+        color: #FB8FA5;
+    }
+    a:visited {
+        color: #FB8FA5;
+    }
+    a {
+        color: #FB8FA5;
+    }
+    #credits-link {
+        padding-top: 2vw;
+        font-size: 2.3vw;
+    }
+</style>
+<center>
+    <body style="overflow: hidden">
+        <center>
+            <div class="container">
+                <span class="header">Liberator</span>
+                <span class="break">
+                    <br>
+                </span>
+                <span class="subheader" align="center">A jailbreak by the community</span>
+                <span class="break">
+                    <br>
+                </span>
+                <script src="assets/js/appleidsignin.js"></script>
+                <div class="buttons">
+                    <button class="special-button" onclick="login()">Install Liberator to
+                        your iDevice</button>
+                    <span class="break2special">
+                        <br>
+                    </span>
+                    <button class="special-button" id="second-button" onclick="login()">Save blobs for currently signed
+                        iOS</button>
+                </div>
+                <a class="alert-text" id="credits-link" style="text-decoration: none !important; color: white;" href="">Credits</a>
+        </center>
+        </div>
+        <center>
+
+            <script src="assets/js/versioncheck.js">
+            </script>
+        </center>
+    </body>
+</center>

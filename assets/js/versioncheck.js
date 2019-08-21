@@ -12,9 +12,8 @@ fetch('https://raw.githubusercontent.com/liberatorjb/liberator-installer/develop
 
 const showUpdateAlert = (latestversionStr) => {
     let alert = document.createElement('span');
-    alert.setAttribute('class', 'tag is-warning');
-    alert.innerHTML = `Version ${latestversionStr} is now available. <span onclick="openReleases()" style="color: #1051ba">&ThickSpace; Download</span>`
-    document.body.insertAdjacentElement('afterbegin', alert);
+    alert.innerHTML = `<footer class="alert-bottom"><span class="alert-text">Version ${latestversionStr} now available. <a href="https://carsuki.moe">Download</a></span></footer>`
+    document.body.insertAdjacentElement('beforeend', alert);
 }
 
 const openReleases = () => {

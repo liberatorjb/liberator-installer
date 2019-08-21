@@ -1,6 +1,6 @@
 {
   "name": "liberator-installer",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "An easy to use installer for the liberator jailbreak.",
   "main": "index.js",
   "scripts": {
