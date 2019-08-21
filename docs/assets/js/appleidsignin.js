@@ -1,4 +1,3 @@
-const { app } = require('electron').remote
 var Dialogs = require('dialogs')
 const dialogs = Dialogs()
 
